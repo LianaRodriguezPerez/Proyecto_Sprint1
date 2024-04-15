@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Permanent Marker";
+  src: url(./fonts/PermanentMarker.ttf) format("truetype"),
+    url(./fonts/PermanentMarker.woff) format("woff");
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+a
+{
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+*{
+  box-sizing: border-box;
+}
+.page {
+  font-family: "Inter", sans-serif;
+  background: white;
+}
+/*ENCABEZADO*/
+.header{
+    height: 100vh;/*Hace que la altura siempre sea a la altura del monitor del usuario */
+    background-image:url("images/Header.jpeg");
+    background-size: cover; /*Hace que la imagen se expanda y ocupe la superficie completa y mantega sus proporciones*/
+    background-position: center;/*Centra horizontal y verticalemnte*/
+    text-align: center; /*centrara el texto de lo que todo este dentro*/
+    margin: auto;
+
+  }
+  .overlay {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: auto;
+   
+  }
+ 
+  .name {
+    font-family: "Permanent Marker", cursive;
+    font-size: 140px;
+    line-height: 140px;
+    color: white;
+    text-transform: uppercase;
+    margin: auto;
+    max-width: 1240px;
+    margin: auto;
+    
+  }
+  /*CARD*/
+  .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 790px;
+    margin: 100px auto 50px;
+
+  }
+  .card{
+    width: 350px;
+    margin-bottom: 60px;
+    padding: 45px 45px 70px;
+    display: inline-block;
+    background: #ffffff;
+    box-shadow: 4px 4px 5px rgba(98, 205, 224, 0.4);
+    object-fit:contain;
+  }
+  .card_title{
+    font-family: "Permanent Marker", cursive;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+ .card_imagen{
+  width: 100%;
+  margin-bottom: 25px;
+  height: 200px;
+  object-fit: contain;
+ }
+ .card_description{
+  font-size: 16px;
+ }
+ .footer{
+  display: flex;
+  background-color: #000000;
+  min-height: 300px;
+ }
+ .firma{
+  color: #eeeeee;
+  font-size: 24px;
+  margin: auto;
+ }
